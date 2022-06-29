@@ -1,0 +1,377 @@
+/** @format */
+
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cormorant+Garamond:wght@300&family=Crete+Round:ital@0;1&family=Dancing+Script:wght@500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200&family=Permanent+Marker&family=Poppins:ital,wght@0,100;1,100&family=Redressed&family=Roboto:wght@100&family=Signika:wght@300;400;500;600;700&family=Space+Grotesk:wght@300&display=swap");
+
+* {
+  border: 0;
+  margin: 0;
+}
+
+.nav {
+  display: none;
+  z-index: 100;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  box-shadow: 2px 10px 6px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 10px 6px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 10px 6px -5px rgba(0, 0, 0, 0.75);
+}
+
+#humb {
+  display: block;
+  padding: 20px;
+  z-index: 100000;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #ec5242;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#humb.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#humb.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#humb.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.logdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.logdiv img {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+  padding: 2px;
+}
+
+.logdiv a {
+  display: none;
+  text-decoration: none;
+  color: #272a13;
+  font-family: "COCOGOOSE", sans-serif;
+}
+
+.nav-ul {
+  z-index: 100;
+  align-items:flex-start;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: blue;
+  width: 100%;
+  padding: 100px;
+}
+
+.nav-ul.active {
+  display: flex;
+}
+
+.nav-li {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 30px;
+  color: #272a13;
+}
+
+.nav-li-active {
+  list-style: none;
+  padding-left: 30px;
+  color: #272a13;
+}
+
+.nav-li-active a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #ec5242;
+}
+
+.nav-li-btn {
+  font-family: "Lato", sans-serif;
+  padding-left: 30px;
+  text-decoration: none;
+  list-style: none;
+  border-radius: 1px solid #ec5242;
+  color: #ec5242;
+}
+
+.nav-li-btn a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #ec5242;
+}
+
+.nav-li a {
+  color: #272a13;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+}
+
+.main {
+  background-image: url(./images/mobile-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+
+.content {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding: 20px;
+  height: 90vh;
+  background-blend-mode: lighten;
+}
+
+.content h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: #ec5242;
+}
+
+.content h1 {
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #ec5242;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-style: normal;
+}
+
+.content p {
+  border: 1px solid wheat;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  margin-bottom: 100px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tasks {
+  background-image: url(./images/brown.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.last-text {
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+.task-heading {
+  text-align: center;
+  color: white;
+  padding: 55px;
+}
+
+br {
+  color: white;
+}
+
+.card {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: auto;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.55);
+  margin: 4px;
+  border-radius: 3px;
+  padding: 30px;
+}
+
+.fa-solid {
+  color: white;
+  font-size: 50px;
+  padding-bottom: 5px;
+}
+
+.card-heading {
+  flex-direction: column;
+  display: flex;
+  color: #ec5242;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.paragraph {
+  text-align: center;
+}
+
+.team-heading {
+
+  text-align: center;
+}
+
+.team-heading hr {
+  text-align: center;
+  width: 35px;
+}
+
+.team-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.person {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.img {
+  padding-right: 20px;
+}
+
+.img img {
+  width: 100px;
+}
+
+.partners {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+
+
+footer{
+  height: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    justify-content: space-around;
+    
+  }
+
+  .nav-li-btn {
+    font-family: "Lato", sans-serif;
+    padding-left: 30px;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 1px solid #ec5242;
+    color: #ec5242;
+  }
+
+  #humb {
+    display: none;
+  }
+
+  .nav-ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    position: relative;
+  }
+
+  .content {
+    padding: 100px 200px;
+    height: 90vh;
+    width: 70vw;
+    background-blend-mode: lighten;
+  }
+
+  .content h1 {
+    font-family: "COCOGOOSE", sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: #ec5242;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-style: normal;
+  }
+
+  .logdiv img {
+    padding: 5px;
+    display: block;
+    height: 50px;
+    border-radius: 60px;
+  }
+
+  .logdiv a {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main {
+    height: 100vh;
+    background-image: url(./images/mobile-bg.png);
+    background-size: cover;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-left: 50px;
+  }
+
+  .card-heading {
+    flex-direction: column;
+  }
+
+  .team-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+  }
+  
+  .person {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
