@@ -23,6 +23,11 @@
   padding-right: 16%;
 }
 
+.top-li {
+  margin-left: 44px;
+  float: left;
+}
+
 .top-li a {
   color: white;
   text-decoration: none;
@@ -163,7 +168,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  height: 50vh;
+  height: 80vh;
 }
 
 .content {
