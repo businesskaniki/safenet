@@ -16,7 +16,7 @@ i consists of two pages the homepage and about page.
 
 [Live Demo Link](https://businesskaniki.github.io/safenet/)
 
-[project walktrough](https://www.loom.com/share/887a6795ccb94f4098fc69c1b254a578)
+[project walk trough](https://www.loom.com/share/887a6795ccb94f4098fc69c1b254a578)
 
 
 ## Getting Started

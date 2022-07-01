@@ -105,10 +105,10 @@
   flex-direction: column;
   position: absolute;
   background-color: #d3d3d3;
-  width: 93%;
+  width: 90%;
   overflow: hidden;
   padding-top: 50px;
-  height: 90%;
+  height: 45%;
 }
 
 .nav-ul.active {
@@ -170,7 +170,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 50vh;
 }
 
 .content {
