@@ -129,7 +129,6 @@
   height: 100%;
 }
 
-
 @media only screen and (min-width: 768px) {
   .about {
     background-image: url(./images/mobile-bg.png);
@@ -175,33 +174,30 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
-}
+  }
 
-.images img {
-  width:  400px;
-  opacity: 0.5;
-}
+  .images img {
+    width: 400px;
+    opacity: 0.5;
+  }
 
-.image1 img {
-  width: 100%;
-  height: 100%;
-}
+  .image1 img {
+    width: 100%;
+    height: 100%;
+  }
 
-.image1 {
-  width: 400px;
-  box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
+  .image1 {
+    width: 400px;
+    box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
+  }
 
-}
+  .image2 {
+    width: 400px;
+    box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
+  }
 
-.image2 {
-  width: 400px;
-  box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
-
-}
-
-.image2 img {
-  width: 100%;
-  height: 100%;
-}
-
+  .image2 img {
+    width: 100%;
+    height: 100%;
+  }
 }
