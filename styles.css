@@ -108,7 +108,7 @@
   width: 90%;
   overflow: hidden;
   padding-top: 50px;
-  height: 45%;
+  height: 100vh;
 }
 
 .nav-ul.active {
