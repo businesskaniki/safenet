@@ -1,15 +1,18 @@
 // toggle
 
 const Humb = document.querySelector("#humb");
-const Menu = document.querySelector(".nav-ul");
+const Menu = document.querySelector('.nav-ul');
 
-Humb.addEventListener("click", () => {
-  Humb.classList.toggle("active");
-  Menu.classList.toggle("active");
+Humb.addEventListener('click', () => {
+  Humb.classList.toggle('active');
+  Menu.classList.toggle('active');
 });
 const teamSection = document.querySelector('.team-cont');
+
 //dynamic  part
+
 const person = [
+
   {
     title: 'reagan clinton',
     titleDetail: 'senior software engeneer',
@@ -82,7 +85,6 @@ function addTechnology() {
     const para = document.createElement('p');
     para.textContent = `${person[i].description}`;
     divDetails.appendChild(para);
-
 
     teamSection.append(divCard);
     console.log(divCard);
