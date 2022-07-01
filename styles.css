@@ -2,7 +2,6 @@
 
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cormorant+Garamond:wght@300&family=Crete+Round:ital@0;1&family=Dancing+Script:wght@500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200&family=Permanent+Marker&family=Poppins:ital,wght@0,100;1,100&family=Redressed&family=Roboto:wght@100&family=Signika:wght@300;400;500;600;700&family=Space+Grotesk:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cormorant+Garamond:wght@300&family=Crete+Round:ital@0;1&family=Dancing+Script:wght@500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200&family=Permanent+Marker&family=Poppins:ital,wght@0,100;1,100&family=Redressed&family=Roboto:wght@100&family=Signika:wght@300;400;500;600;700&family=Space+Grotesk:wght@300&display=swap");
 
 * {
   border: 0;
@@ -27,12 +26,11 @@
 .top-li a {
   color: white;
   text-decoration: none;
-  font-family: "Lato" sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
 }
 
 .nav {
-  display: none;
   z-index: 100;
   height: auto;
   display: flex;
@@ -103,7 +101,6 @@
   background-color: #d3d3d3;
   width: 93%;
   overflow: hidden;
-  position: absolute;
   padding-top: 50px;
 }
 
@@ -115,7 +112,6 @@
   font-family: "Lato", sans-serif;
   text-decoration: none;
   list-style: none;
-  padding-left: 30px;
   color: #272a13;
   padding: 30px;
   margin-left: 30px;
@@ -140,7 +136,6 @@
   padding-left: 30px;
   text-decoration: none;
   list-style: none;
-  border-radius: 1px solid #ec5242;
   padding-bottom: 30px;
   margin-left: 30px;
   color: #ec5242;
@@ -173,7 +168,8 @@
 
 .content {
   padding-top: 100px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 90vh;
   margin-top: 100px;
   background-blend-mode: lighten;
@@ -181,14 +177,14 @@
 }
 
 .content h3 {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 28px;
   color: #ec5242;
 }
 
 .content h1 {
-  font-family: "COCOGOOSE", sans-serif;
+  font-family: 'cocogoose', sans-serif;
   font-weight: bold;
   font-size: 18px;
   color: #ec5242;
@@ -199,8 +195,7 @@
 
 .content p {
   border: 1px solid wheat;
-  font-family: "Lato", sans-serif;
-  padding: auto;
+  font-family: 'Lato', sans-serif;
   margin-bottom: 100px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -222,11 +217,12 @@
   text-align: center;
   padding: 30px;
   font-size: 22px;
-  font-family: "lato" sans-serif;
+  font-family: 'lato', sans-serif;
   color: white;
   text-decoration: underline;
   cursor: pointer;
 }
+
 .last-text span {
   display: none;
 }
@@ -236,7 +232,7 @@
   background-color: #ec5242;
   padding: 7%;
   color: white;
-  font-family: "lato" sans-serif;
+  font-family: 'lato', sans-serif;
   font-size: 20px;
   width: auto;
   cursor: pointer;
@@ -318,7 +314,7 @@ br {
 .team-heading h2 {
   color: #272a13;
   font-size: 28px;
-  font-family: "Lato" sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 200;
   position: relative;
 }
@@ -342,7 +338,7 @@ br {
   letter-spacing: 1px;
   line-height: 16px;
   padding-top: 3px;
-  font-family: "Lato" sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 500;
 }
 
@@ -362,7 +358,9 @@ br {
 
 .person {
   display: flex;
+
   /* justify-content: center; */
+
   /* align-items: center; */
   padding: 20px;
   width: 70%;
@@ -387,7 +385,7 @@ br {
 
 .team-text h2 {
   text-transform: capitalize;
-  font-family: "COCOGOOSE" sans-serif;
+  font-family: 'cocogoose', sans-serif;
   font-size: medium;
   font-weight: 800;
 }
@@ -399,7 +397,6 @@ br {
   height: 200px;
   color: #d3d3d3;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .companies {
@@ -414,10 +411,6 @@ br {
   padding-left: 50px;
 }
 
-footer {
-  height: 100px;
-}
-
 .h3txt {
   text-align: center;
   display: flex;
@@ -427,35 +420,35 @@ footer {
 }
 
 .moz {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #d3d3d3;
 }
 
 .google {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
   font-weight: 300;
   color: #d3d3d3;
 }
 
 .navar {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
   font-weight: 800;
   color: #d3d3d3;
 }
 
 .daum {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
   font-weight: 400;
   color: #d3d3d3;
 }
 
 .air {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
   font-weight: 300;
   color: #d3d3d3;
@@ -503,7 +496,6 @@ footer {
     padding-left: 30px;
     text-decoration: none;
     list-style: none;
-    border-radius: 1px solid #ec5242;
     color: #ec5242;
   }
 
@@ -516,13 +508,13 @@ footer {
     align-items: center;
     flex-direction: row;
     background-color: white;
-    padding: 0px;
+    padding: 0;
     position: relative;
     width: auto;
   }
 
   .nav-li {
-    margin: 0px;
+    margin: 0;
     font-size: small;
   }
 
@@ -535,15 +527,15 @@ footer {
   }
 
   .na .nav-li-btn {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .content {
     padding: 100px 200px;
     height: 90vh;
     width: 70vw;
-    margin: 0px;
+    margin: 0;
     background-blend-mode: lighten;
   }
 
@@ -560,7 +552,6 @@ footer {
   .content p {
     border: 1px solid wheat;
     font-family: "Lato", sans-serif;
-    padding: auto;
     margin-bottom: 100px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -583,7 +574,6 @@ footer {
     height: 100vh;
     background-image: url(./images/mobile-bg.png);
     background-size: cover;
-    height: auto;
     display: flex;
     justify-content: flex-start;
   }
@@ -646,7 +636,7 @@ footer {
   }
 
   .navar {
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 52px;
     font-weight: 800;
     color: #d3d3d3;
@@ -670,7 +660,7 @@ footer {
     text-align: center;
     padding: 30px;
     font-size: 22px;
-    font-family: "lato" sans-serif;
+    font-family: 'lato', sans-serif;
     color: white;
     text-decoration: underline;
     cursor: pointer;

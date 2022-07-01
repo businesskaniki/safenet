@@ -1,4 +1,4 @@
-/** @format */
+// toggle
 
 const Humb = document.querySelector("#humb");
 const Menu = document.querySelector(".nav-ul");
