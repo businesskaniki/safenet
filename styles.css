@@ -173,11 +173,11 @@
 
 .content {
   padding-top: 100px;
-  padding-left: 20px;
   padding: 20px;
   height: 90vh;
   margin-top: 100px;
   background-blend-mode: lighten;
+  padding-bottom: 100px;
 }
 
 .content h3 {
@@ -190,7 +190,7 @@
 .content h1 {
   font-family: "COCOGOOSE", sans-serif;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 18px;
   color: #ec5242;
   padding-top: 23px;
   padding-bottom: 23px;
@@ -200,12 +200,11 @@
 .content p {
   border: 1px solid wheat;
   font-family: "Lato", sans-serif;
-  font-weight: bold;
+  padding: auto;
   margin-bottom: 100px;
-  padding: 4px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 600px;
+  width: auto;
 }
 
 .tasks {
@@ -221,17 +220,49 @@
 
 .last-text {
   text-align: center;
-  padding: 10px;
+  padding: 30px;
+  font-size: 22px;
+  font-family: "lato" sans-serif;
   color: white;
   text-decoration: underline;
+  cursor: pointer;
+}
+.last-text span {
+  display: none;
+}
+
+.last-text button {
+  border: none;
+  background-color: #ec5242;
+  padding: 7%;
+  color: white;
+  font-family: "lato" sans-serif;
+  font-size: 20px;
+  width: auto;
   cursor: pointer;
 }
 
 .task-heading {
   text-align: center;
-  color: #d3d3d3;
+  color: white;
   padding: 30px;
   font-size: 24px;
+}
+
+.task-heading h4 {
+  position: relative;
+}
+
+.task-heading h4::after {
+  display: block;
+  padding-top: 2px;
+  content: "";
+  width: 2%;
+  height: 1px;
+  background: #ec5242;
+  position: absolute;
+  top: 140%;
+  left: 50%;
 }
 
 br {
@@ -246,7 +277,7 @@ br {
   color: white;
   height: auto;
   background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.9);
   margin: 4px;
   border-radius: 3px;
   padding: 30px;
@@ -255,7 +286,7 @@ br {
 .card:hover {
   transition: ease-in-out 250ms;
   transform: scale(1.05);
-  border: 1px solid #ec5242;
+  border: 1px solid #d3d3d3;
 }
 
 .fa-solid {
@@ -289,6 +320,18 @@ br {
   font-size: 28px;
   font-family: "Lato" sans-serif;
   font-weight: 200;
+  position: relative;
+}
+
+.team-heading h2::after {
+  display: block;
+  content: "";
+  width: 2%;
+  height: 2px;
+  background: #ec5242;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 .team-text h6 {
@@ -319,20 +362,27 @@ br {
 
 .person {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 20px;
   width: 70%;
   flex-direction: row;
 }
 
 .img {
-  padding-right: 20px;
+  background-image: url(./images/checked.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  margin-right: 130px;
 }
 
 .img img {
   width: 150px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .team-text h2 {
@@ -368,39 +418,64 @@ footer {
   height: 100px;
 }
 
+.h3txt {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .moz {
   font-family: "Lato", sans-serif;
-  font-size: 52px;
+  font-size: 22px;
   font-weight: 700;
   color: #d3d3d3;
 }
 
 .google {
   font-family: "Lato", sans-serif;
-  font-size: 52px;
+  font-size: 22px;
   font-weight: 300;
   color: #d3d3d3;
 }
 
 .navar {
   font-family: "Lato", sans-serif;
-  font-size: 52px;
+  font-size: 22px;
   font-weight: 800;
   color: #d3d3d3;
 }
 
 .daum {
   font-family: "Lato", sans-serif;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 400;
   color: #d3d3d3;
 }
 
 .air {
   font-family: "Lato", sans-serif;
-  font-size: 52px;
+  font-size: 22px;
   font-weight: 300;
   color: #d3d3d3;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.footer-div img {
+  width: 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -482,6 +557,16 @@ footer {
     font-style: normal;
   }
 
+  .content p {
+    border: 1px solid wheat;
+    font-family: "Lato", sans-serif;
+    padding: auto;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 50%;
+  }
+
   .logdiv img {
     padding: 5px;
     display: block;
@@ -530,5 +615,72 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .companies {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-left: 15%;
+  }
+
+  .h3txt {
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .moz {
+    font-family: "Lato", sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #d3d3d3;
+  }
+
+  .google {
+    font-family: "Lato", sans-serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: #d3d3d3;
+  }
+
+  .navar {
+    font-family: "Lato", sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: #d3d3d3;
+  }
+
+  .daum {
+    font-family: "Lato", sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: #d3d3d3;
+  }
+
+  .air {
+    font-family: "Lato", sans-serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: #d3d3d3;
+  }
+
+  .last-text {
+    text-align: center;
+    padding: 30px;
+    font-size: 22px;
+    font-family: "lato" sans-serif;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .last-text button {
+    display: none;
+  }
+
+  .last-text span {
+    display: inline;
   }
 }
