@@ -1,6 +1,6 @@
 // toggle
 
-const Humb = document.querySelector("#humb");
+const Humb = document.querySelector('#humb');
 const Menu = document.querySelector('.nav-ul');
 
 Humb.addEventListener('click', () => {
@@ -8,9 +8,6 @@ Humb.addEventListener('click', () => {
   Menu.classList.toggle('active');
 });
 const teamSection = document.querySelector('.team-cont');
-
-//dynamic  part
-
 const person = [
 
   {
