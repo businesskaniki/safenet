@@ -51,6 +51,7 @@
 #humb {
   padding: 20px;
   z-index: 100000;
+  height: 2%;
 }
 
 .bar {
@@ -107,6 +108,7 @@
   width: 93%;
   overflow: hidden;
   padding-top: 50px;
+  height: 90%;
 }
 
 .nav-ul.active {
@@ -176,7 +178,6 @@
   padding-left: 20px;
   padding-right: 20px;
   height: 90vh;
-  margin-top: 100px;
   background-blend-mode: lighten;
   padding-bottom: 100px;
 }
