@@ -38,6 +38,7 @@
 .nav {
   z-index: 100;
   height: auto;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -170,7 +171,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  height: 50vh;
+  height: 100vh;
 }
 
 .content {
@@ -511,6 +512,7 @@ footer {
 
   .nav-ul {
     display: flex;
+    height: 50px;
     align-items: center;
     flex-direction: row;
     background-color: white;
